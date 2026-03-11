@@ -1,0 +1,59 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620">
+  <style>
+    .box { fill: #f7f7f7; stroke: #222; stroke-width: 2; }
+    .title { font: bold 16px Arial, sans-serif; }
+    .text { font: 13px Arial, sans-serif; }
+    .line { stroke: #222; stroke-width: 2; }
+  </style>
+
+  <!-- Libro -->
+  <rect class="box" x="370" y="30" width="240" height="170" />
+  <text class="title" x="450" y="55">Libro</text>
+  <line class="line" x1="370" y1="70" x2="610" y2="70" />
+  <text class="text" x="380" y="95">- titulo: String</text>
+  <text class="text" x="380" y="115">- autor: String</text>
+  <text class="text" x="380" y="135">- numEjemplares: int</text>
+  <text class="text" x="380" y="155">- numPrestados: int</text>
+  <line class="line" x1="370" y1="170" x2="610" y2="170" />
+  <text class="text" x="380" y="195">+ prestamo(): boolean</text>
+  <text class="text" x="380" y="215">+ devolucion(): boolean</text>
+
+  <!-- LibroTexto -->
+  <rect class="box" x="120" y="260" width="240" height="140" />
+  <text class="title" x="185" y="285">LibroTexto</text>
+  <line class="line" x1="120" y1="300" x2="360" y2="300" />
+  <text class="text" x="130" y="325">- curso: String</text>
+
+  <!-- LibroTextoUNIAC -->
+  <rect class="box" x="120" y="440" width="240" height="140" />
+  <text class="title" x="150" y="465">LibroTextoUNIAC</text>
+  <line class="line" x1="120" y1="480" x2="360" y2="480" />
+  <text class="text" x="130" y="505">- facultad: String</text>
+
+  <!-- Novela -->
+  <rect class="box" x="620" y="260" width="240" height="140" />
+  <text class="title" x="700" y="285">Novela</text>
+  <line class="line" x1="620" y1="300" x2="860" y2="300" />
+  <text class="text" x="630" y="325">- tipo: TipoNovela</text>
+
+  <!-- TipoNovela -->
+  <rect class="box" x="620" y="440" width="240" height="160" />
+  <text class="title" x="690" y="465">TipoNovela</text>
+  <line class="line" x1="620" y1="480" x2="860" y2="480" />
+  <text class="text" x="630" y="505">HISTORICA</text>
+  <text class="text" x="630" y="525">ROMANTICA</text>
+  <text class="text" x="630" y="545">POLICIACA</text>
+  <text class="text" x="630" y="565">REALISTA</text>
+  <text class="text" x="630" y="585">CIENCIA_FICCION</text>
+  <text class="text" x="630" y="605">AVENTURAS</text>
+
+  <!-- Herencia lines -->
+  <line class="line" x1="240" y1="260" x2="440" y2="200" />
+  <line class="line" x1="740" y1="260" x2="540" y2="200" />
+  <line class="line" x1="240" y1="440" x2="240" y2="400" />
+
+  <!-- Arrowheads -->
+  <polygon points="440,200 430,210 450,210" fill="#222" />
+  <polygon points="540,200 530,210 550,210" fill="#222" />
+  <polygon points="240,400 230,410 250,410" fill="#222" />
+</svg>
