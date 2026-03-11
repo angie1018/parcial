@@ -32,3 +32,4 @@ Sistema de gestion de biblioteca usando POO (abstraccion, encapsulamiento y here
 
 - `libro2` se llena por consola con `Scanner`.
 - Los metodos de prestamo y devolucion devuelven `true/false` segun se pueda hacer la operacion.
+- Ajuste pequeño en README para el PR.
