@@ -64,6 +64,21 @@ classDiagram
 - Atributo 2: `isbn` (String).
 - Metodo extra: `estaDisponible()` que devuelva `true` si hay ejemplares libres.
 
+## Ejemplo de uso (salida corta)
+
+```
+--- Objetos creados ---
+Libro{titulo='Cien Anos de Soledad', autor='Gabriel Garcia Marquez', numEjemplares=3, numPrestados=1}
+Libro{titulo='(ingresado por consola)', autor='(ingresado por consola)', numEjemplares=2, numPrestados=0}
+LibroTextoUNIAC{titulo='Programacion II', autor='Equipo UNIAC', numEjemplares=5, numPrestados=2, curso='POO', facultad='Ingenieria'}
+Novela{titulo='La Sombra del Viento', autor='Carlos Ruiz Zafon', numEjemplares=4, numPrestados=0, tipo=AVENTURAS}
+
+--- Pruebas de prestamo/devolucion ---
+Prestamo libro1: true
+Prestamo libro1: true
+Devolucion libro1: true
+```
+
 ## Notas
 
 - `libro2` se llena por consola con `Scanner`.
