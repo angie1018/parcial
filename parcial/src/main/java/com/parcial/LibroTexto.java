@@ -1,0 +1,33 @@
+package com.parcial;
+
+public class LibroTexto extends Libro {
+    private String curso;
+
+    public LibroTexto() {
+        super();
+        this.curso = "";
+    }
+
+    public LibroTexto(String titulo, String autor, int numEjemplares, int numPrestados, String curso) {
+        super(titulo, autor, numEjemplares, numPrestados);
+        this.curso = curso;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public String toString() {
+        return "LibroTexto{" +
+                "titulo='" + getTitulo() + '\'' +
+                ", autor='" + getAutor() + '\'' +
+                ", numEjemplares=" + getNumEjemplares() +
+                ", numPrestados=" + getNumPrestados() +
+                ", curso='" + curso + '\'' +
+                '}';
+    }
+}
