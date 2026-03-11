@@ -21,7 +21,7 @@ classDiagram
         -String curso
     }
 
-    class LibroTextoUNIAC {
+    class LibroTextoUNIAJC {
         -String facultad
     }
 
@@ -40,7 +40,7 @@ classDiagram
     }
 
     Libro <|-- LibroTexto
-    LibroTexto <|-- LibroTextoUNIAC
+    LibroTexto <|-- LibroTextoUNIAJC
     Libro <|-- Novela
 ```
 
@@ -52,7 +52,7 @@ classDiagram
 
 ## Lo que se pide en el parcial (resumen)
 
-1. Clases: `Libro`, `LibroTexto`, `LibroTextoUNIAC`, `Novela` y `TipoNovela`.
+1. Clases: `Libro`, `LibroTexto`, `LibroTextoUNIAJC`, `Novela` y `TipoNovela`.
 2. Constructores, getters/setters y metodos `prestamo` y `devolucion`.
 3. Cuatro objetos en `Main` y pruebas de prestamo/devolucion.
 4. Dos casos donde no se puede heredar: ver `HerenciaInvalidaEjemplos`.

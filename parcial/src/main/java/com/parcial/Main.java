@@ -19,10 +19,10 @@ public class Main {
         System.out.print("Numero de ejemplares prestados libro2: ");
         libro2.setNumPrestados(leerEntero(scanner));
 
-        // libroTextoUNIAC con todos sus atributos
+        // libroTextoUNIAJC con todos sus atributos
         LibroTextoUNIAJC libroTextoUNIAJC = new LibroTextoUNIAJC(
                 "Programacion II",
-                "Equipo UNIAC",
+                "Equipo UNIAJC",
                 5,
                 2,
                 "POO",

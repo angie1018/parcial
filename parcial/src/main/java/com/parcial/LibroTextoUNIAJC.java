@@ -1,14 +1,14 @@
 package com.parcial;
 
-public class LibroTextoUNIAC extends LibroTexto {
+public class LibroTextoUNIAJC extends LibroTexto {
     private String facultad;
 
-    public LibroTextoUNIAC() {
+    public LibroTextoUNIAJC() {
         super();
         this.facultad = "";
     }
 
-    public LibroTextoUNIAC(String titulo, String autor, int numEjemplares, int numPrestados, String curso, String facultad) {
+    public LibroTextoUNIAJC(String titulo, String autor, int numEjemplares, int numPrestados, String curso, String facultad) {
         super(titulo, autor, numEjemplares, numPrestados, curso);
         this.facultad = facultad;
     }
