@@ -4,9 +4,45 @@ Sistema de gestion de biblioteca usando POO (abstraccion, encapsulamiento y here
 
 **Estructura Maven:** el proyecto esta dentro de `parcial/`.
 
-## Diagrama UML (captura)
+## Diagrama UML (Mermaid)
 
-![Diagrama UML](parcial/docs/uml.svg)
+```mermaid
+classDiagram
+    class Libro {
+        -String titulo
+        -String autor
+        -int numEjemplares
+        -int numPrestados
+        +boolean prestamo()
+        +boolean devolucion()
+    }
+
+    class LibroTexto {
+        -String curso
+    }
+
+    class LibroTextoUNIAC {
+        -String facultad
+    }
+
+    class Novela {
+        -TipoNovela tipo
+    }
+
+    class TipoNovela {
+        <<enumeration>>
+        HISTORICA
+        ROMANTICA
+        POLICIACA
+        REALISTA
+        CIENCIA_FICCION
+        AVENTURAS
+    }
+
+    Libro <|-- LibroTexto
+    LibroTexto <|-- LibroTextoUNIAC
+    Libro <|-- Novela
+```
 
 ## Como ejecutar
 
