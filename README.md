@@ -21,7 +21,7 @@ classDiagram
         -String curso
     }
 
-    class LibroTextoUNIAC {
+    class LibroTextoUNIAJC {
         -String facultad
     }
 
@@ -40,7 +40,7 @@ classDiagram
     }
 
     Libro <|-- LibroTexto
-    LibroTexto <|-- LibroTextoUNIAC
+    LibroTexto <|-- LibroTextoUNIAJC
     Libro <|-- Novela
 ```
 
@@ -52,7 +52,7 @@ classDiagram
 
 ## Lo que se pide en el parcial (resumen)
 
-1. Clases: `Libro`, `LibroTexto`, `LibroTextoUNIAC`, `Novela` y `TipoNovela`.
+1. Clases: `Libro`, `LibroTexto`, `LibroTextoUNIAJC`, `Novela` y `TipoNovela`.
 2. Constructores, getters/setters y metodos `prestamo` y `devolucion`.
 3. Cuatro objetos en `Main` y pruebas de prestamo/devolucion.
 4. Dos casos donde no se puede heredar: ver `HerenciaInvalidaEjemplos`.
@@ -63,6 +63,21 @@ classDiagram
 - Atributo 1: `anioPublicacion` (int).
 - Atributo 2: `isbn` (String).
 - Metodo extra: `estaDisponible()` que devuelva `true` si hay ejemplares libres.
+
+## Ejemplo de uso (salida corta)
+
+```
+--- Objetos creados ---
+Libro{titulo='Cien Anos de Soledad', autor='Gabriel Garcia Marquez', numEjemplares=3, numPrestados=1}
+Libro{titulo='(ingresado por consola)', autor='(ingresado por consola)', numEjemplares=2, numPrestados=0}
+LibroTextoUNIAC{titulo='Programacion II', autor='Equipo UNIAC', numEjemplares=5, numPrestados=2, curso='POO', facultad='Ingenieria'}
+Novela{titulo='La Sombra del Viento', autor='Carlos Ruiz Zafon', numEjemplares=4, numPrestados=0, tipo=AVENTURAS}
+
+--- Pruebas de prestamo/devolucion ---
+Prestamo libro1: true
+Prestamo libro1: true
+Devolucion libro1: true
+```
 
 ## Notas
 

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // libro1 con constructor con parametros
-        Libro libro1 = new Libro("Cien Anos de Soledad", "Gabriel Garcia Marquez", 3, 1);
+        Libro libro1 = new Libro("Cien Años de Soledad", "Gabriel Garcia Marquez", 3, 1);
 
         // libro2 con constructor por defecto y datos por consola
         Scanner scanner = new Scanner(System.in);
@@ -19,10 +19,10 @@ public class Main {
         System.out.print("Numero de ejemplares prestados libro2: ");
         libro2.setNumPrestados(leerEntero(scanner));
 
-        // libroTextoUNIAC con todos sus atributos
+        // libroTextoUNIAJC con todos sus atributos
         LibroTextoUNIAJC libroTextoUNIAJC = new LibroTextoUNIAJC(
                 "Programacion II",
-                "Equipo UNIAC",
+                "Equipo UNIAJC",
                 5,
                 2,
                 "POO",
